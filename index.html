@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sepatu Lokal</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Sepatu Lokal</h1>
+        <p>Menampilkan koleksi sepatu lokal terbaik Indonesia</p>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#" data-section="home" class="active">Home</a></li>
+            <li><a href="#" data-section="cart">Keranjang</a></li>
+            <li><a href="#" data-section="contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="filter-section">
+                <label for="filter">Filter berdasarkan kategori:</label>
+                <select id="filter">
+                    <option value="all">Semua</option>
+                    <option value="sneakers">Sneakers</option>
+                    <option value="formal">Formal</option>
+                    <option value="casual">Casual</option>
+                </select>
+            </div>
+
+            <section class="shoes-gallery" id="shoesGallery">
+                <article class="shoe-item" data-category="sneakers" data-name="Sneakers Lokal 1" data-price="500000">
+                    <img src="images/sepatu one.jpg" />
+                    <h2>Sneakers Lokal 1</h2>
+                    <p>Sepatu sneakers nyaman dengan desain modern dan bahan lokal berkualitas.</p>
+                    <p class="price">Rp 500.000</p>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </article>
+                <article class="shoe-item" data-category="formal" data-name="Sepatu Formal Lokal" data-price="750000">
+                    <img src="images/sepatu two.jpg" alt="Sepatu Formal Lokal" />
+                    <h2>Sepatu Formal Lokal</h2>
+                    <p>Sepatu formal elegan cocok untuk acara resmi dan kantor.</p>
+                    <p class="price">Rp 750.000</p>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </article>
+                <article class="shoe-item" data-category="casual" data-name="Sepatu Casual Lokal" data-price="400000">
+                    <img src="images/sepatu tree.jpg" alt="Sepatu Casual Lokal" />
+                    <h2>Sepatu Casual Lokal</h2>
+                    <p>Sepatu casual yang stylish dan nyaman untuk aktivitas sehari-hari.</p>
+                    <p class="price">Rp 400.000</p>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </article>
+                <article class="shoe-item" data-category="sneakers" data-name="Sneakers Lokal 2" data-price="550000">
+                    <img src="images/sepatu four.jpg" alt="Sneakers Lokal 2" />
+                    <h2>Sneakers Lokal 2</h2>
+                    <p>Desain sneakers yang trendi dengan bahan ramah lingkungan.</p>
+                    <p class="price">Rp 550.000</p>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </article>
+                <article class="shoe-item" data-category="sneakers" data-name="Sepatu Kalcer" data-price="600000">
+                    <img src="images/sepatu five.jpg" alt="Sepatu Kalcer" />
+                    <h2>Sepatu Kalcer</h2>
+                    <p>Desain sepatu yang teramat nyaman</p>
+                    <p class="price">Rp 550.000</p>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </article>
+            </section>
+        </section>
+
+        <section id="cart" class="section">
+            <h2>Keranjang Belanja</h2>
+            <div id="cartItems">
+                <p>Keranjang kosong.</p>
+            </div>
+            <button id="clearCartBtn">Kosongkan Keranjang</button>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Kontak Kami</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
